@@ -1,0 +1,36 @@
+{
+  "expo": {
+    "name": "Photothèque",
+    "slug": "phototheque",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.phototheque.app"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#E6F4FE",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "package": "com.phototheque.app"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Photothèque accède à tes photos pour les classer par thème.",
+          "cameraPermission": "Photothèque utilise l’appareil photo pour tes captures.",
+          "microphonePermission": "Photothèque utilise le micro pour enregistrer le son des vidéos."
+        }
+      ]
+    ]
+  }
+}
